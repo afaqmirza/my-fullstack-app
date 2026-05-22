@@ -1,5 +1,5 @@
 /** Unified API client — all document tools use POST /api/execute with a task name. */
-export const API_BASE = import.meta.env.VITE_API_URL || 'http://localhost:8000';
+export const API_BASE = import.meta.env.VITE_API_URL || '';
 
 export async function executeTool(task, formData, fetchOptions = {}) {
   const body = formData instanceof FormData ? formData : new FormData();
