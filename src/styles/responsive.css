@@ -1,0 +1,208 @@
+/* Mobile & tablet — site-wide responsive layout */
+
+@media (max-width: 1024px) {
+  .container {
+    padding: 0 1.25rem;
+  }
+
+  .tools-hero-premium {
+    padding: 100px 1.25rem 48px;
+  }
+
+  .tools-hero-premium h1 {
+    font-size: 2.25rem;
+  }
+
+  .tools-grid-premium {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem;
+  }
+
+  .hero-flex {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-text-container h1 {
+    font-size: 2.25rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .header .brand-link img,
+  .footer-logo img {
+    height: 52px !important;
+  }
+
+  .tool-header-hero,
+  .tools-hero-premium,
+  .contact-hero {
+    padding-top: 5.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .tool-header-hero h1,
+  .pdf-to-word-page .tool-header-hero h1 {
+    font-size: 1.65rem !important;
+  }
+
+  .tool-header-hero p {
+    font-size: 0.95rem !important;
+  }
+
+  .workspace-container {
+    padding: 0 1rem 2rem !important;
+    max-width: 100% !important;
+  }
+
+  .upload-zone {
+    padding: 2.5rem 1rem !important;
+  }
+
+  .upload-text {
+    font-size: 1.15rem !important;
+  }
+
+  .btn-large {
+    width: 100%;
+    padding: 1rem 1.5rem !important;
+  }
+
+  .tools-grid-premium {
+    grid-template-columns: 1fr;
+  }
+
+  .tools-filtering {
+    top: 70px;
+  }
+
+  .filter-tabs {
+    justify-content: flex-start;
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    padding-bottom: 0.5rem;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .filter-tabs button {
+    flex-shrink: 0;
+    font-size: 0.85rem;
+    padding: 0.5rem 1rem;
+  }
+
+  .language-selector-group {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .lang-select {
+    width: 100%;
+  }
+
+  .lang-select select {
+    width: 100%;
+  }
+
+  .swap-btn {
+    align-self: center;
+    transform: rotate(90deg);
+  }
+
+  .result-grid-side {
+    grid-template-columns: 1fr !important;
+    gap: 1rem;
+  }
+
+  .text-panel .panel-body {
+    max-height: 220px;
+    overflow-y: auto;
+  }
+
+  .rotate-options-card,
+  .watermark-options-card,
+  .editor-options-card,
+  .intelligence-workspace {
+    padding: 1.25rem !important;
+    margin: 0 0.5rem;
+  }
+
+  .summary-result-card,
+  .translation-result-card {
+    padding: 1.25rem !important;
+    margin: 0 0.5rem;
+  }
+
+  .contact-hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .form-container {
+    flex-direction: column !important;
+  }
+
+  .form-content,
+  .form-image {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .form-image {
+    display: none;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .footer-bottom-flex {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .feature-info-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .qr-hero-inner h1 {
+    font-size: 1.75rem;
+  }
+
+  .qr-hero-pills {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .tools-display .container {
+    padding: 0 0.75rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .card-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .hero-premium-split {
+    padding: 5rem 0.75rem 2rem;
+  }
+
+  .featured-tools-grid {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+/* Touch-friendly tap targets */
+@media (hover: none) and (pointer: coarse) {
+  .tool-card:hover {
+    transform: none;
+  }
+
+  .card-button,
+  .btn,
+  .filter-tabs button,
+  .submit-btn {
+    min-height: 44px;
+  }
+}

@@ -1,0 +1,19 @@
+﻿:root {
+  --background: #FFFFFF;
+  --primary-blue: #0EA5E9; /* Sky Blue */
+  --hover-blue: #0284C7; /* Darker Sky Blue for hover */
+  --dark-text: #4A3B32; /* Dark Brown */
+  --light-text: #8A7365; /* Medium Brown for secondary text */
+  --borders: #E6DFD9; /* Light sandy brown for borders */
+  --cards: #FAFAFA; /* Off-white for cards */
+  --success: #10B981;
+  --danger: #EF4444;
+  --dark-brown: #5C4033; /* For larger dominant brown areas */
+}
+
+body {
+  margin: 0;
+  background-color: var(--background);
+  color: var(--dark-text);
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}

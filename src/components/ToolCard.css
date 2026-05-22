@@ -1,0 +1,147 @@
+.tool-card {
+  background: var(--background);
+  border: 1px solid var(--borders);
+  border-radius: 1rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  color: #000000;
+}
+
+.hot-tool-badge {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  z-index: 2;
+  background: linear-gradient(135deg, #f97316 0%, #ef4444 100%);
+  color: white;
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  padding: 0.35rem 0.65rem;
+  border-radius: 99px;
+  box-shadow: 0 4px 14px rgba(239, 68, 68, 0.45);
+  animation: hot-pulse 2s ease-in-out infinite;
+}
+
+.tool-card-hot {
+  border-color: rgba(249, 115, 22, 0.45);
+}
+
+.tool-card-hot:hover {
+  box-shadow: 0 0 40px rgba(249, 115, 22, 0.25), 0 12px 32px rgba(14, 165, 233, 0.12);
+}
+
+@keyframes hot-pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+}
+
+.tool-card:hover {
+  border-color: var(--primary-blue);
+  box-shadow: 0 0 40px rgba(14, 165, 233, 0.4), 0 0 80px rgba(14, 165, 233, 0.2);
+  transform: translateY(-12px);
+  background: white;
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.card-icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 0.75rem;
+  background: linear-gradient(135deg, var(--primary-blue) 0%, var(--hover-blue) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--background);
+  flex-shrink: 0;
+}
+
+/* Ensure all tool cards in the grid stretch to the same height for consistent alignment */
+.tools-grid-premium .tool-card {
+  height: 100%;
+}
+
+.card-header h3 {
+  color: #000000;
+  font-size: 1.25rem;
+  margin: 0;
+  font-weight: 600;
+}
+
+.card-description {
+  color: #000000;
+  margin: 0 0 1.5rem 0;
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+.card-features {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+  flex-grow: 1;
+}
+
+.feature {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: #000000;
+  font-size: 0.9rem;
+}
+
+.feature-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--primary-blue);
+  flex-shrink: 0;
+}
+
+.card-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  background: linear-gradient(135deg, var(--primary-blue) 0%, var(--hover-blue) 100%);
+  color: var(--background);
+  border: none;
+  padding: 0.75rem 1.25rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 0.95rem;
+}
+
+.card-button:hover {
+  transform: translateX(2px);
+  box-shadow: 0 10px 20px rgba(37, 99, 235, 0.2);
+}
+
+.card-button:active {
+  transform: translateX(0);
+}
+
+@media (max-width: 768px) {
+  .tool-card {
+    padding: 1.5rem;
+  }
+
+  .card-header h3 {
+    font-size: 1.1rem;
+  }
+}

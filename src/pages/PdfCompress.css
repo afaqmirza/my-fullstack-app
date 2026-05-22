@@ -1,0 +1,116 @@
+.pdf-compress-page {
+  padding-top: 80px;
+}
+
+.compress-options-card {
+  background: var(--cards);
+  border-radius: 1.5rem;
+  padding: 2.5rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  border: 1px solid var(--borders);
+  text-align: center;
+}
+
+.selected-file-preview {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 1.5rem;
+  background: #f8fafc;
+  border-radius: 1rem;
+  margin-bottom: 2rem;
+  border: 1px solid var(--borders);
+  text-align: left;
+}
+
+.file-icon-wrapper {
+  color: var(--primary-blue);
+  background: white;
+  padding: 1rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.file-meta h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.25rem;
+  color: var(--dark-text);
+}
+
+.file-meta p {
+  color: var(--light-text);
+  font-size: 0.9rem;
+}
+
+.compression-features {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.feature {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--light-text);
+  font-size: 0.9rem;
+}
+
+.feature svg {
+  color: var(--primary-blue);
+}
+
+.stats-grid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin: 2rem 0;
+  padding: 2rem;
+  background: #f8fafc;
+  border-radius: 1.5rem;
+  position: relative;
+}
+
+.stat-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.stat-label {
+  font-size: 0.8rem;
+  color: var(--light-text);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.stat-value {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--dark-text);
+}
+
+.stat-value.highlight {
+  color: var(--primary-blue);
+}
+
+.stat-divider {
+  font-size: 1.5rem;
+  color: var(--borders);
+}
+
+.savings-badge {
+  position: absolute;
+  top: -15px;
+  right: 20px;
+  background: var(--success);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+  font-weight: 600;
+  font-size: 0.9rem;
+  box-shadow: 0 4px 10px rgba(16, 185, 129, 0.2);
+}
+

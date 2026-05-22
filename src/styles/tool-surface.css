@@ -1,0 +1,160 @@
+/* White tool workspace theme */
+:root {
+  --pale-oak: #ffffff;
+  --pale-oak-light: #ffffff;
+  --pale-oak-mid: #ffffff;
+  --pale-oak-dark: #d1d5db;
+  --pale-oak-card: #ffffff;
+}
+
+.tool-page-surface {
+  min-height: calc(100vh - 80px);
+  background: #ffffff;
+}
+
+.tool-page-surface .tool-header-hero {
+  background: transparent;
+}
+
+.tool-page-surface .workspace-container {
+  background: transparent;
+}
+
+.tool-page-surface .upload-zone,
+.tool-page-surface .processing-card,
+.tool-page-surface .success-card,
+.tool-page-surface .error-card,
+.tool-page-surface .editor-options-card,
+.tool-page-surface .rotate-options-card,
+.tool-page-surface .watermark-options-card,
+.tool-page-surface .ocr-options-card,
+.tool-page-surface .ocr-result-card {
+  background: var(--pale-oak-card);
+  border-color: var(--pale-oak-dark);
+}
+
+.tool-page-surface .file-preview-strip {
+  background: #f8fafc;
+  border-color: var(--pale-oak-dark);
+}
+
+.tool-page-surface .doc-editor-toolbar,
+.tool-page-surface .editor-top-bar,
+.tool-page-surface .doc-format-bar {
+  background: var(--pale-oak-card);
+  border-color: var(--pale-oak-dark);
+}
+
+.tool-page-surface .tool-btn {
+  background: var(--pale-oak-card);
+  border-color: var(--pale-oak-dark);
+}
+
+.tool-page-surface .tool-btn:hover:not(:disabled) {
+  background: #f8fafc;
+}
+
+.tool-guide-section {
+  padding: 0 1rem 3rem;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.tool-page-surface .tool-instructions-toggle {
+  background: #ffffff;
+  border-color: var(--borders, #e6dfd9);
+  color: #111827;
+}
+
+.tool-page-surface .tool-instructions-body {
+  background: #ffffff;
+  border-color: var(--borders, #e6dfd9);
+}
+
+/* Bigger stepper controls (editor + automation) */
+.stepper-control {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  margin-top: 0.5rem;
+}
+
+.stepper-control .stepper-label {
+  font-weight: 600;
+  font-size: 0.875rem;
+  color: #111827;
+}
+
+.stepper-control .stepper-inner {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.stepper-control .stepper-btn {
+  width: 48px;
+  height: 48px;
+  border-radius: 0.75rem;
+  border: 2px solid var(--pale-oak-dark);
+  background: var(--pale-oak-card);
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1;
+  cursor: pointer;
+  color: #111827;
+  transition: background 0.15s, transform 0.1s;
+}
+
+.stepper-control .stepper-btn:hover:not(:disabled) {
+  background: #f8fafc;
+  transform: scale(1.05);
+}
+
+.stepper-control .stepper-btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.stepper-control .stepper-value {
+  min-width: 3.5rem;
+  text-align: center;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #111827;
+}
+
+.stepper-control-lg .stepper-btn {
+  width: 56px;
+  height: 56px;
+  font-size: 1.75rem;
+}
+
+.tool-page-surface .adjust-btn-lg {
+  padding: 0.85rem 1rem;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.opacity-slider-row {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  margin-top: 0.35rem;
+}
+
+.opacity-slider-row label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #4b5563;
+}
+
+.opacity-slider-row input[type='range'] {
+  width: 100%;
+  accent-color: #2563eb;
+}
+
+.tool-page-surface .tool-header-hero,
+.tool-page-surface .tool-header-hero h1,
+.tool-page-surface .tool-header-hero p {
+  color: #000000 !important;
+}

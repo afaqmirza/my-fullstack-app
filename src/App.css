@@ -1,0 +1,197 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  background: var(--background);
+  color: var(--dark-text);
+  line-height: 1.5;
+}
+
+.app-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-content {
+  flex: 1;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  font-family: inherit;
+}
+
+/* Global utility classes */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.gradient-text {
+  background: linear-gradient(135deg, var(--primary-blue) 0%, var(--hover-blue) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--cards);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary-blue);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--hover-blue);
+}
+
+/* Global animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Global Premium Styles */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  padding: 0.875rem 2rem;
+  border-radius: 0.75rem;
+  font-weight: 600;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+  border: none;
+  font-size: 1rem;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, var(--primary-blue) 0%, var(--hover-blue) 100%);
+  color: white;
+  box-shadow: 0 4px 12px rgba(14, 165, 233, 0.25);
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(14, 165, 233, 0.4);
+}
+
+.btn-primary:active {
+  transform: translateY(0);
+}
+
+.btn-large {
+  padding: 1.125rem 3rem;
+  font-size: 1.125rem;
+}
+
+/* Premium Upload Zone Global Overrides */
+.upload-zone {
+  border: 2px dashed #cbd5e1 !important;
+  border-radius: 2rem !important;
+  padding: 5rem 2rem !important;
+  background: rgba(255, 255, 255, 0.8) !important;
+  backdrop-filter: blur(10px) !important;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275) !important;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.05) !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  text-align: center !important;
+}
+
+.upload-zone:hover {
+  border-color: var(--primary-blue) !important;
+  background: white !important;
+  transform: translateY(-5px) !important;
+  box-shadow: 0 25px 50px rgba(14, 165, 233, 0.15) !important;
+}
+
+.upload-zone.active, .upload-zone.has-file, .upload-zone.file-selected {
+  border-color: var(--primary-blue) !important;
+  background: #f0f9ff !important;
+  border-style: solid !important;
+}
+
+.upload-icon {
+  width: 80px !important;
+  height: 80px !important;
+  background: linear-gradient(135deg, var(--primary-blue) 0%, var(--hover-blue) 100%) !important;
+  box-shadow: 0 10px 20px rgba(14, 165, 233, 0.3) !important;
+  margin: 0 auto 2rem !important;
+  border-radius: 50% !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  color: white !important;
+  animation: pulse-soft 3s infinite ease-in-out;
+}
+
+@keyframes pulse-soft {
+  0%, 100% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.05); opacity: 0.9; }
+}
+
+.upload-text {
+  font-size: 1.5rem !important;
+  font-weight: 800 !important;
+  color: var(--dark-text) !important;
+  margin-bottom: 0.5rem !important;
+}
+
+.upload-subtext {
+  font-size: 1rem !important;
+  color: var(--light-text) !important;
+  margin-bottom: 2rem !important;
+}
+
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+  .upload-zone {
+    padding: 3rem 1.5rem !important;
+  }
+}

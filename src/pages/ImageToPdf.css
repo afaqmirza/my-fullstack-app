@@ -1,0 +1,96 @@
+.image-to-pdf-page {
+  padding-top: 80px;
+}
+
+.file-list-container {
+  background: var(--cards);
+  border-radius: 1.5rem;
+  padding: 2rem;
+  border: 1px solid var(--borders);
+}
+
+.list-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.btn-add-more {
+  background: #f1f5f9;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.75rem;
+  font-weight: 600;
+  color: var(--primary-blue);
+  cursor: pointer;
+}
+
+.images-grid {
+  display: grid;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.image-card {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  background: #f8fafc;
+  border-radius: 1rem;
+  border: 1px solid var(--borders);
+}
+
+.image-preview-placeholder {
+  width: 48px;
+  height: 48px;
+  background: white;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--primary-blue);
+}
+
+.file-name {
+  font-weight: 500;
+  color: var(--dark-text);
+  font-size: 0.95rem;
+}
+
+.image-actions {
+  margin-left: auto;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.image-actions button {
+  background: white;
+  border: 1px solid var(--borders);
+  width: 32px;
+  height: 32px;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--light-text);
+  cursor: pointer;
+}
+
+.image-actions button:hover:not(:disabled) {
+  color: var(--primary-blue);
+  border-color: var(--primary-blue);
+}
+
+.image-actions button.btn-remove:hover {
+  color: #ef4444;
+  border-color: #ef4444;
+}
+
+.action-bar {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+

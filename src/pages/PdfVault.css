@@ -1,0 +1,103 @@
+.pdf-vault-page {
+  padding-top: 80px;
+}
+
+.vault-tabs {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.vault-tabs button {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  border-radius: 1rem;
+  border: 1px solid var(--borders);
+  background: white;
+  color: var(--light-text);
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.vault-tabs button.active {
+  background: var(--primary-blue);
+  color: white;
+  border-color: var(--primary-blue);
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.2);
+}
+
+.vault-options-card {
+  background: var(--cards);
+  border-radius: 1.5rem;
+  padding: 2.5rem;
+  border: 1px solid var(--borders);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.file-preview {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  background: #f8fafc;
+  border-radius: 1rem;
+  margin-bottom: 2rem;
+}
+
+.password-input-group {
+  text-align: left;
+  margin-bottom: 2rem;
+}
+
+.password-input-group label {
+  display: block;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--dark-text);
+  margin-bottom: 0.5rem;
+}
+
+.input-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.input-wrapper input {
+  width: 100%;
+  padding: 0.875rem 1rem;
+  border-radius: 0.75rem;
+  border: 1px solid var(--borders);
+  font-size: 1rem;
+  outline: none;
+}
+
+.input-wrapper input:focus {
+  border-color: var(--primary-blue);
+  box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.1);
+}
+
+.input-wrapper button {
+  position: absolute;
+  right: 0.75rem;
+  background: none;
+  border: none;
+  color: var(--light-text);
+  cursor: pointer;
+}
+
+.hint {
+  font-size: 0.8rem;
+  color: var(--light-text);
+  margin-top: 0.5rem;
+}
+
+.btn-unlock {
+  background: #10b981 !important;
+}
+

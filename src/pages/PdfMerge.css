@@ -1,0 +1,162 @@
+.pdf-merge-page {
+  padding-top: 80px;
+}
+
+.merge-workspace {
+  background: var(--cards);
+  border-radius: 1.5rem;
+  padding: 2rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  border: 1px solid var(--borders);
+}
+
+.files-list-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.list-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--borders);
+}
+
+.btn-add-more {
+  background: #f0f9ff;
+  color: var(--primary-blue);
+  border: 1px solid #bae6fd;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn-add-more:hover {
+  background: #e0f2fe;
+}
+
+.files-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  max-height: 400px;
+  overflow-y: auto;
+  padding-right: 0.5rem;
+}
+
+.file-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background: #f8fafc;
+  border: 1px solid var(--borders);
+  border-radius: 0.75rem;
+  transition: transform 0.2s;
+}
+
+.file-info {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex: 1;
+}
+
+.file-index {
+  background: var(--primary-blue);
+  color: white;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.file-name {
+  font-weight: 500;
+  color: var(--dark-text);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 400px;
+}
+
+.file-actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.file-actions button {
+  background: white;
+  border: 1px solid var(--borders);
+  border-radius: 0.4rem;
+  padding: 0.4rem;
+  cursor: pointer;
+  color: var(--light-text);
+  transition: all 0.2s;
+}
+
+.file-actions button:hover:not(:disabled) {
+  color: var(--primary-blue);
+  border-color: var(--primary-blue);
+}
+
+.file-actions button:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+.btn-remove:hover {
+  color: var(--danger) !important;
+  border-color: var(--danger) !important;
+}
+
+.merge-actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--borders);
+}
+
+.btn-large {
+  padding: 1rem 3rem !important;
+  font-size: 1.1rem !important;
+}
+
+.error-message-inline {
+  margin-top: 1rem;
+  padding: 0.75rem;
+  background: #fef2f2;
+  color: var(--danger);
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+}
+
+/* Custom Scrollbar for list */
+.files-list::-webkit-scrollbar {
+  width: 6px;
+}
+
+.files-list::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.files-list::-webkit-scrollbar-thumb {
+  background: var(--borders);
+  border-radius: 10px;
+}
+
