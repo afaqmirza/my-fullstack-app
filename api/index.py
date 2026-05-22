@@ -20,7 +20,8 @@ sys.path.append(PYTHON_BACKEND_DIR)
 sys.path.append(ROOT_DIR)
 
 # Import workers directly
-from worker import process_task
+# Lazy import process_task inside endpoint to avoid heavy imports at module load
+# from worker import process_task  <-- removed
 from qr_api import decode_qr, generate_qr
 
 app = FastAPI()
@@ -65,19 +66,11 @@ async def execute(request: Request, background_tasks: BackgroundTasks):
     if not task:
         return JSONResponse({"error": "Task name is required"}, status_code=400)
         
-    temp_dir = "/tmp" if os.environ.get("VERCEL") else os.path.join(ROOT_DIR, "temp")
-    os.makedirs(temp_dir, exist_ok=True)
-    
-    files_list = []
-    args = {}
-    
-    # Extract files and text arguments.
-    # We want to preserve the order, especially placing 'file' first if it exists.
-    for key, value in form.multi_items():
-        if isinstance(value, UploadFile):
-            if value.filename:
-                file_path = os.path.join(temp_dir, f"{uuid.uuid4()}_{value.filename}")
-                with open(file_path, "wb") as f:
+    # Lazy import process_task to avoid heavy imports at startup
+    try:
+        from worker import process_task
+    except Exception as import_err:
+        return JSONResponse({"error": f"Failed to import backend worker: {str(import_err)}"}, status_code=500)
                     shutil.copyfileobj(value.file, f)
                 
                 # If key is 'file', insert it at the start, otherwise append

@@ -25,9 +25,12 @@ import PyPDF2
 
 # Intelligence / Automation
 from bs4 import BeautifulSoup
-from selenium import webdriver
-from selenium.webdriver.chrome.options import Options
-from selenium.webdriver.common.by import By
+try:
+    from selenium import webdriver
+    from selenium.webdriver.chrome.options import Options
+    from selenium.webdriver.common.by import By
+except ImportError:
+    webdriver = Options = By = None
 from groq import Groq
 from docx import Document as DocxDocument
 from deep_translator import GoogleTranslator
