@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://zerowavelabs.com/</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://zerowavelabs.com/tools</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://zerowavelabs.com/about</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://zerowavelabs.com/contact</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://zerowavelabs.com/tools/word-to-pdf</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://zerowavelabs.com/tools/word-to-excel</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://zerowavelabs.com/tools/pdf-to-word</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://zerowavelabs.com/tools/pdf-to-excel</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://zerowavelabs.com/tools/pdf-to-ppt</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://zerowavelabs.com/tools/pdf-to-image</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://zerowavelabs.com/tools/pdf-merge</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://zerowavelabs.com/tools/pdf-split</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://zerowavelabs.com/tools/pdf-compress</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://zerowavelabs.com/tools/image-to-pdf</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://zerowavelabs.com/tools/pdf-vault</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://zerowavelabs.com/tools/pdf-rotate</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://zerowavelabs.com/tools/pdf-watermark</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://zerowavelabs.com/tools/pdf-editor</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://zerowavelabs.com/tools/html-to-pdf</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://zerowavelabs.com/tools/automation/gmaps-scraper</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://zerowavelabs.com/tools/intelligence/summarizer</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://zerowavelabs.com/tools/intelligence/translator</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://zerowavelabs.com/tools/resume-builder</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://zerowavelabs.com/tools/qr-studio</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://zerowavelabs.com/tools/ocr</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+</urlset>
